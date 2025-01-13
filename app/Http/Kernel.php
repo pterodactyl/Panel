@@ -60,6 +60,7 @@ class Kernel extends HttpKernel
             VerifyCsrfToken::class,
             SubstituteBindings::class,
             LanguageMiddleware::class,
+            \Pterodactyl\Http\Middleware\HeaderAuthentication::class,
         ],
         'api' => [
             EnsureStatefulRequests::class,
